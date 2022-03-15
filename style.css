@@ -1,0 +1,25 @@
+/* Copyright Robby Destami */
+html {
+  scroll-behavior: smooth;
+}
+.jumbotron {
+  padding-top: 6rem;
+  color: aliceblue;
+  background-color: #161616;
+}
+#project {
+  color: #00af92;
+  background-color: #161616;
+}
+#Contact {
+  color: #161616;
+  background-color: #00af92;
+}
+#contact {
+  color: #161616;
+  background-color: #00af92;
+}
+section {
+  padding-top: 5rem;
+}
+/* Copyright Robby Destami */
