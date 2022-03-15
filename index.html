@@ -143,7 +143,11 @@
                 <label for="pesan" class="form-label">Pesan</label>
                 <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Kirim</button>
+              <button type="submit" class="btn btn-primary btn-send">Kirim</button>
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
             </form>
           </div>
         </div>
@@ -154,22 +158,13 @@
 
     <!-- footer -->
 <footer class="text-white text-center pb-3 pt-5" style="background-color: #161616;">
-  <p>Created with <i class="bi bi-heart-fill text-danger"></i> by<a href="https://www.instagram.com/robbydestami" class="text-white fw-bold"> Robby Destami</a></p>
+  <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/robbydestami" class="text-white fw-bold">Robby Destami</a></p>
 </footer>
     <!-- footer Akhir -->
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<form name="submit-to-google-sheet">
-  <input name="email" type="email" placeholder="Email" required>
-  <button type="submit"class="btn btn-primary btn-send">Send</button>
-  <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-    Loading...
-  </button>
-</form>
-
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzk_RS0yXaxtqSBxnN1crooR_QLbvJAJrkLq5I8IThhv92TbEM4XxEl_glBerPu-AHiaw/exec'
   const form = document.forms['Contact-Form']
